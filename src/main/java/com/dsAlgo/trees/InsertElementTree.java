@@ -15,32 +15,42 @@ public class InsertElementTree {
 
         insertElement(t1,35);
         System.out.println("Inorder");
+        inorderTraversal(t1);
 
     }
 
     private static void insertElement(Node root, int key) {
         Node current = root;
-        Node newNode = new Node(key);
-        if (root == null) {
-            newNode = root;
+        Node newnode = new Node(35);
+        if(current == null){
+            newnode = current;
         }
-        else{
-            while (true) {
-                Node parent = current;
-                if (key < current.data) {
+
+        while(current!=null){
+            if(key>current.data) {
+                current = current.right;
+                if (current.right == null) {
+                    current.right = newnode;
+                    return;
+                } else if (key < current.data) {
                     current = current.left;
-                    if (current == null) {
-                        parent.left = newNode;
-                        return;
-                    }
-                } else if (key > current.data) {
-                    current = current.right;
-                    if (current == null) {
-                        parent.right = newNode;
+                    if (current.left == null) {
+                        current.left = newnode;
                         return;
                     }
                 }
             }
         }
+
+    }
+
+    private static void inorderTraversal(Node t1) {
+        if(t1==null){
+            return;
+        }
+        inorderTraversal(t1.left);
+        System.out.println(t1.data);
+        inorderTraversal(t1.right);
     }
 }
+

@@ -15,7 +15,7 @@ public class TwoTreesMirrorImages {
         t1.right=t2;
         t2.left = t5;
         t2.right=t4;
-        //t3.left=t6;
+        t3.left=t6;
 
 
         Node n1 = new Node(1);

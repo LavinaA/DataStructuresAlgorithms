@@ -1,6 +1,6 @@
 package com.dsAlgo.trees;
 
-import sun.swing.StringUIClientPropertyKey;
+//import sun.swing.StringUIClientPropertyKey;
 
 public class OneTreeSubtreeOfAnother {
     public static void main(String[] args) {

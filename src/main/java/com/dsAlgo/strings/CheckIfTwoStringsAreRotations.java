@@ -29,4 +29,5 @@ public class CheckIfTwoStringsAreRotations {
         }
         return false;
     }
+
 }

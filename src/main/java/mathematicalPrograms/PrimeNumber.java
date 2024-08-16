@@ -31,14 +31,10 @@ public class PrimeNumber {
         boolean result;
         for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
-                //result = false;
-                break;
+                return false;
             }
-            else{
-                result =true;
-                return result;
-            }
+
         }
-       return false;
+       return true;
     }
 }

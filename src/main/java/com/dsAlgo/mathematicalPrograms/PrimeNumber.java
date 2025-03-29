@@ -14,9 +14,9 @@ public class PrimeNumber {
         if (n == 0 || n == 1) {
             System.out.println("The number is not a prime number");
         }
-        if (n == 3) {
+       /* if (n == 3) {
             System.out.println("The number is a prime number");
-        }
+        }*/
 
         for (int i = 2; i <= n; i++) {
             boolean b = IsPrime(i);

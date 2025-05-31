@@ -11,7 +11,6 @@ public class Singleton {
        if(obj == null){
            obj = new Singleton();
        }
-
         return obj;
     }
 
